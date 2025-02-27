@@ -1,0 +1,132 @@
+.home_page {
+    display: grid;
+    place-items: center;
+
+    &>.home_container {
+        width: 95%;
+        max-width: 1400px;
+        padding: 80px 30px 50px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        & .inputs_container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &>input {
+                width: 70%;
+                background-color: var(--c_red);
+                border: none;
+                height: 50px;
+                border-radius: 8px;
+                color: #fff;
+                padding-left: 10px;
+                font-size: 1.1rem;
+
+                &::placeholder {
+                    color: #ffffffa8;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.separator {
+    height: 40px;
+    width: 100%;
+    background-color: #e7072b;
+    border-radius: 8px;
+}
+
+.user_card {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+
+    &>span {
+        display: flex;
+        align-items: center;
+        padding: 7px;
+        border-radius: 8px;
+        font-size: 1.1rem;
+    }
+
+    &>div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+
+        &>img {
+            border-radius: 10px;
+        }
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 7px;
+
+            &>span {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #2d2c30;
+            }
+        }
+    }
+}
+
+.black {
+    background-color: #2d2c30;
+    color: #fff;
+}
+
+.red {
+    background-color: #e7072b;
+    color: #fff;
+}
+
+.yellow {
+    background-color: #ff8806;
+    color: #fff;
+}
+
+.normal_user_card {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    
+    &>img {
+        border-radius: 50%;
+        border: 3px solid var(--c_red);
+    }
+
+    &>span {
+        max-width: 100%;
+        color: #2d2c30;
+        font-weight: 600;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: clip;
+    }
+}
