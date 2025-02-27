@@ -17,7 +17,7 @@ async function getServerSideData(user: string) {
         name: "Jhon Didoe",
         img: logoImg,
         logo: tempImg,
-        wNumber: "28999519306",
+        wNumber: "xxxxxxx",
         roles: [
             "Diretor Distrital",
             "Diretor Distrital"
