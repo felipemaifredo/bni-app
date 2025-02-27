@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 //
 export const metadata: Metadata = {
   title: "BNI App",
-  themeColor: "f95c53"
+  themeColor: "#f95c53"
 }
 
 //
